@@ -85,6 +85,7 @@ public class CheckUtil {
         simpleTypeList.add("double");
         simpleTypeList.add("Long");
         simpleTypeList.add("long");
+        simpleTypeList.add("BigDecimal");
     }
 
     public static CheckUtil getInstant() {

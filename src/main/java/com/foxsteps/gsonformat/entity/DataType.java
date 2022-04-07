@@ -17,7 +17,8 @@ public enum DataType {
     Data_Type_long("long"),
     Data_Type_String("String"),
     Data_type_Object("Object"),
-    Data_Type_Array("array");
+    Data_Type_Array("array"),
+    Data_Type_BigDecimal("BigDecimal");
 
     private String value;
 
@@ -39,7 +40,7 @@ public enum DataType {
         } else if (value instanceof Integer) {
             type = Data_Type_Int;
         } else if (value instanceof Double) {
-            type = Data_Type_Double;
+            type = Data_Type_BigDecimal;
         } else if (value instanceof Long) {
             type = Data_Type_long;
         } else if (value instanceof String) {
